@@ -1,23 +1,24 @@
-// Code your solutions in this file
-function writeCards(names, event) {
-  const messages = [];
-  for (let i = 0; i < names.length; i++) {
-    messages.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`);
+// function countDown(number) {
+//   while (number >= 0) {
+//     console.log(number);
+//     number--;
+//   }
+// }
+
+function writeCards(name, event) {
+  const message = [];
+  for (let i = 0; i < name.length; i++) {
+    message.push(`Thank you, ${name[i]}, for the wonderful ${event} gift!`);
   }
-  return messages;
+  return message;
 }
 
-const names = ["Alice", "Bob", "Charlie"];
-const event = "birthday";
+const name = ["Alice", "Bob", "Kevin"];
+const event = "Birthday";
+const message = writeCards(name, event);
+console.log(message);
 
-const messages = writeCards(names, event);
-console.log(messages);
-// Output:
-// [
-//   "Thank you, Alice, for the wonderful birthday gift!",
-//   "Thank you, Bob, for the wonderful birthday gift!",
-//   "Thank you, Charlie, for the wonderful birthday gift!"
-// ]
+///
 
 function countDown(number) {
   while (number >= 0) {
